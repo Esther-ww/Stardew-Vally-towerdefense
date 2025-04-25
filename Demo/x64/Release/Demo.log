@@ -1,0 +1,9 @@
+﻿  main.cpp
+E:\TdGame\Demo\main.cpp(101,16): warning C4552: ”-“: 未使用表达式结果
+    正在创建库 E:\TdGame\x64\Release\Demo.lib 和对象 E:\TdGame\x64\Release\Demo.exp
+  正在生成代码
+  1 of 470 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  Demo.vcxproj -> E:\TdGame\x64\Release\Demo.exe

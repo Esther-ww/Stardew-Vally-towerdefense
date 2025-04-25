@@ -1,0 +1,12 @@
+{
+    "name": "Alice",
+    "age": 25,
+    "is_student": false,
+    "pets":["dog","cat"],
+    "key":{
+        "name": "Alice",
+    "age": 25,
+    "is_student": false,
+    "pets":["dog","cat"]
+    }
+}
