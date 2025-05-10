@@ -16,18 +16,39 @@
     <Filter Include="头文件\manager">
       <UniqueIdentifier>{9c3b4cae-45ba-4783-b5f8-43de65efdb48}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\enemy">
+      <UniqueIdentifier>{3428e63c-91a4-4f09-a720-e8b37fdc9257}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="manager.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\manager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="game_manager.h">
+    <ClInclude Include="tile.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="map.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="route.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="game_manager.h">
+      <Filter>头文件\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="config_manager.h">
+      <Filter>头文件\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="wave.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="enemy_type.h">
+      <Filter>头文件\enemy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

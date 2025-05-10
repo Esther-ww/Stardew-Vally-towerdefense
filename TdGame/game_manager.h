@@ -1,6 +1,7 @@
 #ifndef _GAME_MANAGER_H_
 #define _GAME_MANAGER_H_
-#include<SDL.h>
+
+#include <SDL.h>
 #include<SDL_image.h>
 #include<SDL_mixer.h>
 #include<SDL_ttf.h>
@@ -38,11 +39,11 @@ public:
 
 				SDL_RenderPresent(renderer);
 
-				return 0;
+
 
 			}
 		}
-
+		return 0;
 	}
 
 protected:
@@ -61,7 +62,15 @@ protected:
 		renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC | SDL_RENDERER_TARGETTEXTURE);//硬件加速、垂直同步(防止画面撕裂），还能渲染到纹理上
 
 	};
-	~GameManager() {};
+	~GameManager() {
+		SDL_DestroyRenderer(renderer);
+		SDL_DestroyWindow(window);
+		TTF_Quit();
+		Mix_Quit();
+		IMG_Quit();
+		SDL_Quit();//按申请的顺序倒序释放
+	
+	};
 
 private:
 	SDL_Event event;
@@ -87,6 +96,7 @@ private:
 
 
 };
+
 
 
 

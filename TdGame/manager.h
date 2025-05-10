@@ -5,7 +5,7 @@ template <typename T>
 //µ¥ÀıÄ£Ê½
 class Manager {
 public:
-	static T* instance() {
+	static Manager<T>* instance() {
 		if (!manager)
 			manager = new T();
 		return manager;

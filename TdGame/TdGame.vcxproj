@@ -116,7 +116,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;SDL_MAIN_HANDLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>..\3party\SDL2_gfx\include;..\3party\SDL2_ttf\include;..\3party\SDL2_mixer\include;..\3party\SDL2_image\include;..\3party\SDL2\include;..\3party\cJSON\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -126,7 +126,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>..\3party\SDL2\lib\x64;..\3party\SDL2_ttf\lib\x64;..\3party\SDL2_mixer\lib\x64;..\3party\SDL2_image\lib\x64;..\3party\SDL2_gfx\lib\x64;..\3party\SDL2_main\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_gfx.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2_gfx.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -134,7 +134,13 @@
     <ClCompile Include="manager.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="config_manager.h" />
+    <ClInclude Include="enemy_type.h" />
     <ClInclude Include="game_manager.h" />
+    <ClInclude Include="map.h" />
+    <ClInclude Include="route.h" />
+    <ClInclude Include="tile.h" />
+    <ClInclude Include="wave.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

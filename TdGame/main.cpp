@@ -1,10 +1,10 @@
-#include <iostream>
-#include"manager.h"
-#include"game_manager.h"
+#define SDL_MAIN_HANDLED
+#include "game_manager.h"
 
-int main() {
-	GameManager* instance = GameManager::instance();
+int main(int argc,char** argv) {
 
-	std::cout << "helloworld" << std::endl;
+	GameManager* instance = static_cast<GameManager*>(GameManager::instance());
+	instance->run(argc, argv);
 	return 0;
+	
 }

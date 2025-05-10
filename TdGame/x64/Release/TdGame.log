@@ -1,2 +1,13 @@
-﻿MSVCRT.lib(exe_main.obj) : error LNK2001: 无法解析的外部符号 main
-E:\TdGame\x64\Release\TdGame.exe : fatal error LNK1120: 1 个无法解析的外部命令
+﻿  main.cpp
+E:\TdGame\TdGame\main.cpp(1,9): warning C4005: “SDL_MAIN_HANDLED”: 宏重定义
+      E:\TdGame\TdGame\main.cpp(1,9):
+      之前在命令行上声明的“SDL_MAIN_HANDLED”
+  
+E:\TdGame\TdGame\game_manager.h(29,51): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+  (编译源文件“main.cpp”)
+  
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 9 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  TdGame.vcxproj -> E:\TdGame\x64\Release\TdGame.exe
