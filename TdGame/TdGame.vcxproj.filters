@@ -19,6 +19,9 @@
     <Filter Include="头文件\enemy">
       <UniqueIdentifier>{3428e63c-91a4-4f09-a720-e8b37fdc9257}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\cjson">
+      <UniqueIdentifier>{fde17f28-8167-4e5a-9756-9ea956bce7d9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -26,6 +29,12 @@
     </ClCompile>
     <ClCompile Include="manager.h">
       <Filter>头文件\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3party\cJSON\cJSON.c">
+      <Filter>源文件\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="animation.h">
+      <Filter>头文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -49,6 +58,9 @@
     </ClInclude>
     <ClInclude Include="enemy_type.h">
       <Filter>头文件\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

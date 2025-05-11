@@ -3,12 +3,42 @@
   "WorkspaceRootPath": "E:\\TdGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|E:\\TdGame\\TdGame\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|solutionrelative:TdGame\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|E:\\TdGame\\TdGame\\game_manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|solutionrelative:TdGame\\game_manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD581952-70E8-427D-9A7B-EF2E31CDA10A}|Demo\\Demo.vcxproj|E:\\TdGame\\Demo\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AD581952-70E8-427D-9A7B-EF2E31CDA10A}|Demo\\Demo.vcxproj|solutionrelative:Demo\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|E:\\TdGame\\TdGame\\enemy_type.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|solutionrelative:TdGame\\enemy_type.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\16484\\AppData\\Local\\Temp\\7ceae1df-005e-4adc-b685-3357f3cd577a_C\u002B\u002B\u53CC\u4EBA\u5854\u9632\u6E38\u620F\u5F00\u53D1.zip.77a\\C\u002B\u002B\u53CC\u4EBA\u5854\u9632\u6E38\u620F\u5F00\u53D1Voidmatrix\\\u9879\u76EE\u6E90\u4EE3\u7801\\TdGame\\game_manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|E:\\TdGame\\TdGame\\config_manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|solutionrelative:TdGame\\config_manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\16484\\AppData\\Local\\Temp\\8a3bdc96-aaf5-42c5-bd4c-6e5ac094ad2d_C\u002B\u002B\u53CC\u4EBA\u5854\u9632\u6E38\u620F\u5F00\u53D1.zip.d2d\\C\u002B\u002B\u53CC\u4EBA\u5854\u9632\u6E38\u620F\u5F00\u53D1Voidmatrix\\\u9879\u76EE\u6E90\u4EE3\u7801\\TdGame\\config_manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|E:\\TdGame\\TdGame\\manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|solutionrelative:TdGame\\manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|E:\\TdGame\\TdGame\\route.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|solutionrelative:TdGame\\route.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|E:\\TdGame\\TdGame\\wave.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|solutionrelative:TdGame\\wave.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|E:\\TdGame\\TdGame\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|solutionrelative:TdGame\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|E:\\TdGame\\TdGame\\tile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -17,18 +47,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|E:\\TdGame\\TdGame\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|solutionrelative:TdGame\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|E:\\TdGame\\TdGame\\game_manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|solutionrelative:TdGame\\game_manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|E:\\TdGame\\TdGame\\manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{716C0465-18F7-4C9F-A9E5-ACEB4E778A6D}|TdGame\\TdGame.vcxproj|solutionrelative:TdGame\\manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD581952-70E8-427D-9A7B-EF2E31CDA10A}|Demo\\Demo.vcxproj|E:\\TdGame\\Demo\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AD581952-70E8-427D-9A7B-EF2E31CDA10A}|Demo\\Demo.vcxproj|solutionrelative:Demo\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +56,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "game_manager.h",
+              "DocumentMoniker": "C:\\Users\\16484\\AppData\\Local\\Temp\\7ceae1df-005e-4adc-b685-3357f3cd577a_C\u002B\u002B\u53CC\u4EBA\u5854\u9632\u6E38\u620F\u5F00\u53D1.zip.77a\\C\u002B\u002B\u53CC\u4EBA\u5854\u9632\u6E38\u620F\u5F00\u53D1Voidmatrix\\\u9879\u76EE\u6E90\u4EE3\u7801\\TdGame\\game_manager.h",
+              "ToolTip": "C:\\Users\\16484\\AppData\\Local\\Temp\\7ceae1df-005e-4adc-b685-3357f3cd577a_C\u002B\u002B\u53CC\u4EBA\u5854\u9632\u6E38\u620F\u5F00\u53D1.zip.77a\\C\u002B\u002B\u53CC\u4EBA\u5854\u9632\u6E38\u620F\u5F00\u53D1Voidmatrix\\\u9879\u76EE\u6E90\u4EE3\u7801\\TdGame\\game_manager.h [\u53EA\u8BFB]",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAAANUAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-11T02:50:03.057Z",
+              "EditorCaption": " [\u53EA\u8BFB]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "config_manager.h",
+              "DocumentMoniker": "C:\\Users\\16484\\AppData\\Local\\Temp\\8a3bdc96-aaf5-42c5-bd4c-6e5ac094ad2d_C\u002B\u002B\u53CC\u4EBA\u5854\u9632\u6E38\u620F\u5F00\u53D1.zip.d2d\\C\u002B\u002B\u53CC\u4EBA\u5854\u9632\u6E38\u620F\u5F00\u53D1Voidmatrix\\\u9879\u76EE\u6E90\u4EE3\u7801\\TdGame\\config_manager.h",
+              "ToolTip": "C:\\Users\\16484\\AppData\\Local\\Temp\\8a3bdc96-aaf5-42c5-bd4c-6e5ac094ad2d_C\u002B\u002B\u53CC\u4EBA\u5854\u9632\u6E38\u620F\u5F00\u53D1.zip.d2d\\C\u002B\u002B\u53CC\u4EBA\u5854\u9632\u6E38\u620F\u5F00\u53D1Voidmatrix\\\u9879\u76EE\u6E90\u4EE3\u7801\\TdGame\\config_manager.h [\u53EA\u8BFB]",
+              "ViewState": "AgIAACMBAAAAAAAAAAAgwDwBAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-10T11:40:26.233Z",
+              "EditorCaption": " [\u53EA\u8BFB]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "config_manager.h",
+              "DocumentMoniker": "E:\\TdGame\\TdGame\\config_manager.h",
+              "RelativeDocumentMoniker": "TdGame\\config_manager.h",
+              "ToolTip": "E:\\TdGame\\TdGame\\config_manager.h*",
+              "RelativeToolTip": "TdGame\\config_manager.h*",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAAANoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-10T11:37:32.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "manager.h",
+              "DocumentMoniker": "E:\\TdGame\\TdGame\\manager.h",
+              "RelativeDocumentMoniker": "TdGame\\manager.h",
+              "ToolTip": "E:\\TdGame\\TdGame\\manager.h*",
+              "RelativeToolTip": "TdGame\\manager.h*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-10T11:29:06.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "route.h",
               "DocumentMoniker": "E:\\TdGame\\TdGame\\route.h",
               "RelativeDocumentMoniker": "TdGame\\route.h",
@@ -55,20 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "map.h",
-              "DocumentMoniker": "E:\\TdGame\\TdGame\\map.h",
-              "RelativeDocumentMoniker": "TdGame\\map.h",
-              "ToolTip": "E:\\TdGame\\TdGame\\map.h",
-              "RelativeToolTip": "TdGame\\map.h",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-08T10:19:18.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "tile.h",
               "DocumentMoniker": "E:\\TdGame\\TdGame\\tile.h",
               "RelativeDocumentMoniker": "TdGame\\tile.h",
@@ -76,24 +129,11 @@
               "RelativeToolTip": "TdGame\\tile.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-08T09:31:32.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T09:31:32.66Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "manager.h",
-              "DocumentMoniker": "E:\\TdGame\\TdGame\\manager.h",
-              "RelativeDocumentMoniker": "TdGame\\manager.h",
-              "ToolTip": "E:\\TdGame\\TdGame\\manager.h",
-              "RelativeToolTip": "TdGame\\manager.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-20T13:05:59.557Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "main.cpp",
               "DocumentMoniker": "E:\\TdGame\\TdGame\\main.cpp",
               "RelativeDocumentMoniker": "TdGame\\main.cpp",
@@ -105,27 +145,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "game_manager.h",
               "DocumentMoniker": "E:\\TdGame\\TdGame\\game_manager.h",
               "RelativeDocumentMoniker": "TdGame\\game_manager.h",
-              "ToolTip": "E:\\TdGame\\TdGame\\game_manager.h",
-              "RelativeToolTip": "TdGame\\game_manager.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAAAAAAAAAAAAA==",
+              "ToolTip": "E:\\TdGame\\TdGame\\game_manager.h*",
+              "RelativeToolTip": "TdGame\\game_manager.h*",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAAG8AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-24T07:32:48.422Z"
+              "WhenOpened": "2025-04-24T07:32:48.422Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
+              "Title": "map.h",
+              "DocumentMoniker": "E:\\TdGame\\TdGame\\map.h",
+              "RelativeDocumentMoniker": "TdGame\\map.h",
+              "ToolTip": "E:\\TdGame\\TdGame\\map.h",
+              "RelativeToolTip": "TdGame\\map.h",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-08T10:19:18.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "wave.h",
+              "DocumentMoniker": "E:\\TdGame\\TdGame\\wave.h",
+              "RelativeDocumentMoniker": "TdGame\\wave.h",
+              "ToolTip": "E:\\TdGame\\TdGame\\wave.h",
+              "RelativeToolTip": "TdGame\\wave.h",
+              "ViewState": "AgIAAAEAAAAAAAAAAADwvxYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-09T06:34:32.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "enemy_type.h",
+              "DocumentMoniker": "E:\\TdGame\\TdGame\\enemy_type.h",
+              "RelativeDocumentMoniker": "TdGame\\enemy_type.h",
+              "ToolTip": "E:\\TdGame\\TdGame\\enemy_type.h",
+              "RelativeToolTip": "TdGame\\enemy_type.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-09T06:36:17.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "E:\\TdGame\\Demo\\main.cpp",
               "RelativeDocumentMoniker": "Demo\\main.cpp",
               "ToolTip": "E:\\TdGame\\Demo\\main.cpp",
               "RelativeToolTip": "Demo\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-20T13:05:59.033Z"
+              "WhenOpened": "2025-04-20T13:05:59.033Z",
+              "EditorCaption": ""
             }
           ]
         }
