@@ -1,4 +1,4 @@
-﻿  cJSON.c
+﻿  animation.h
   main.cpp
 E:\TdGame\TdGame\main.cpp(1,9): warning C4005: “SDL_MAIN_HANDLED”: 宏重定义
       E:\TdGame\TdGame\main.cpp(1,9):
@@ -57,84 +57,366 @@ E:\TdGame\TdGame\resources_manager.h(95,15): error C2990: “Manager”: 非类 
       E:\TdGame\TdGame\manager.h(6,7):
       参见“Manager”的声明
   
-E:\TdGame\TdGame\game_manager.h(14,26): error C2955: “Manager”: 使用 类 模板 需要 模板 参数列表
+E:\TdGame\TdGame\manager.h(6,7): error C2953: “Manager”: 类模板已经定义
   (编译源文件“main.cpp”)
       E:\TdGame\TdGame\manager.h(6,7):
       参见“Manager”的声明
   
-E:\TdGame\TdGame\game_manager.h(15,15): error C2990: “Manager”: 非类 模板 已经声明为类 模板
+E:\TdGame\TdGame\manager.h(26,25): error C2086: “Manager<T> *Manager<T>::manager”: 重定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(26,25):
+      参见“Manager<T>::manager”的声明
+  
+E:\TdGame\TdGame\manager.h(6,7): error C2953: “Manager”: 类模板已经定义
   (编译源文件“main.cpp”)
       E:\TdGame\TdGame\manager.h(6,7):
       参见“Manager”的声明
   
-E:\TdGame\TdGame\game_manager.h(31,51): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+E:\TdGame\TdGame\manager.h(26,25): error C2086: “Manager<T> *Manager<T>::manager”: 重定义
   (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(26,25):
+      参见“Manager<T>::manager”的声明
   
-E:\TdGame\TdGame\game_manager.h(59,42): error C2039: "instance": 不是 "ConfigManager" 的成员
+E:\TdGame\TdGame\config_manager.h(14,7): error C2011: “ConfigManager”:“class”类型重定义
   (编译源文件“main.cpp”)
       E:\TdGame\TdGame\config_manager.h(14,7):
       参见“ConfigManager”的声明
   
-E:\TdGame\TdGame\game_manager.h(59,42): error C3861: “instance”: 找不到标识符
+E:\TdGame\TdGame\manager.h(6,7): error C2953: “Manager”: 类模板已经定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(6,7):
+      参见“Manager”的声明
+  
+E:\TdGame\TdGame\manager.h(26,25): error C2086: “Manager<T> *Manager<T>::manager”: 重定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(26,25):
+      参见“Manager<T>::manager”的声明
+  
+E:\TdGame\TdGame\enemy.h(259,58): error C2027: 使用了未定义类型“ConfigManager”
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\config_manager.h(14,7):
+      参见“ConfigManager”的声明
+  
+E:\TdGame\TdGame\enemy.h(259,58): error C3861: “instance”: 找不到标识符
   (编译源文件“main.cpp”)
   
-E:\TdGame\TdGame\game_manager.h(73,33): error C2039: "instance": 不是 "ResourcesManager" 的成员
+E:\TdGame\TdGame\enemy.h(259,41): error C2530: “rect_tile_map”: 必须初始化引用
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\manager.h(6,7): error C2953: “Manager”: 类模板已经定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(6,7):
+      参见“Manager”的声明
+  
+E:\TdGame\TdGame\manager.h(26,25): error C2086: “Manager<T> *Manager<T>::manager”: 重定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(26,25):
+      参见“Manager<T>::manager”的声明
+  
+E:\TdGame\TdGame\manager.h(6,7): error C2953: “Manager”: 类模板已经定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(6,7):
+      参见“Manager”的声明
+  
+E:\TdGame\TdGame\manager.h(26,25): error C2086: “Manager<T> *Manager<T>::manager”: 重定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(26,25):
+      参见“Manager<T>::manager”的声明
+  
+E:\TdGame\TdGame\manager.h(6,7): error C2953: “Manager”: 类模板已经定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(6,7):
+      参见“Manager”的声明
+  
+E:\TdGame\TdGame\manager.h(26,25): error C2086: “Manager<T> *Manager<T>::manager”: 重定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(26,25):
+      参见“Manager<T>::manager”的声明
+  
+E:\TdGame\TdGame\manager.h(6,7): error C2953: “Manager”: 类模板已经定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(6,7):
+      参见“Manager”的声明
+  
+E:\TdGame\TdGame\manager.h(26,25): error C2086: “Manager<T> *Manager<T>::manager”: 重定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(26,25):
+      参见“Manager<T>::manager”的声明
+  
+E:\TdGame\TdGame\home_manager.h(8,28): error C2955: “Manager”: 使用 类 模板 需要 模板 参数列表
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(6,7):
+      参见“Manager”的声明
+  
+E:\TdGame\TdGame\home_manager.h(10,15): error C2990: “Manager”: 非类 模板 已经声明为类 模板
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(6,7):
+      参见“Manager”的声明
+  
+E:\TdGame\TdGame\home_manager.h(26,24): error C2039: "instance": 不是 "ResourcesManager" 的成员
   (编译源文件“main.cpp”)
       E:\TdGame\TdGame\resources_manager.h(93,7):
       参见“ResourcesManager”的声明
   
-E:\TdGame\TdGame\game_manager.h(73,33): error C3861: “instance”: 找不到标识符
+E:\TdGame\TdGame\home_manager.h(26,24): error C3861: “instance”: 找不到标识符
   (编译源文件“main.cpp”)
   
-E:\TdGame\TdGame\game_manager.h(110,51): error C2039: "instance": 不是 "ConfigManager" 的成员
-  (编译源文件“main.cpp”)
-      E:\TdGame\TdGame\config_manager.h(14,7):
-      参见“ConfigManager”的声明
-  
-E:\TdGame\TdGame\game_manager.h(110,51): error C2064: 项不会计算为接受 0 个参数的函数
+E:\TdGame\TdGame\home_manager.h(26,4): error C2530: “sound_pool”: 必须初始化引用
   (编译源文件“main.cpp”)
   
-E:\TdGame\TdGame\game_manager.h(118,35): error C2039: "instance": 不是 "ConfigManager" 的成员
+E:\TdGame\TdGame\home_manager.h(34,27): error C2027: 使用了未定义类型“ConfigManager”
   (编译源文件“main.cpp”)
       E:\TdGame\TdGame\config_manager.h(14,7):
       参见“ConfigManager”的声明
   
-E:\TdGame\TdGame\game_manager.h(118,35): error C3861: “instance”: 找不到标识符
+E:\TdGame\TdGame\home_manager.h(34,27): error C3861: “instance”: 找不到标识符
   (编译源文件“main.cpp”)
   
-E:\TdGame\TdGame\game_manager.h(118,18): error C2530: “map”: 必须初始化引用
+E:\TdGame\TdGame\manager.h(6,7): error C2953: “Manager”: 类模板已经定义
   (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(6,7):
+      参见“Manager”的声明
   
-E:\TdGame\TdGame\game_manager.h(120,44): error C2039: "instance": 不是 "ConfigManager" 的成员
+E:\TdGame\TdGame\manager.h(26,25): error C2086: “Manager<T> *Manager<T>::manager”: 重定义
   (编译源文件“main.cpp”)
-      E:\TdGame\TdGame\config_manager.h(14,7):
-      参见“ConfigManager”的声明
+      E:\TdGame\TdGame\manager.h(26,25):
+      参见“Manager<T>::manager”的声明
   
-E:\TdGame\TdGame\game_manager.h(120,44): error C3861: “instance”: 找不到标识符
-  (编译源文件“main.cpp”)
-  
-E:\TdGame\TdGame\game_manager.h(120,27): error C2530: “rect_tile_map”: 必须初始化引用
-  (编译源文件“main.cpp”)
-  
-E:\TdGame\TdGame\game_manager.h(121,49): error C2039: "instance": 不是 "ResourcesManager" 的成员
+E:\TdGame\TdGame\slim_enemy.h(14,24): error C2039: "instance": 不是 "ResourcesManager" 的成员
   (编译源文件“main.cpp”)
       E:\TdGame\TdGame\resources_manager.h(93,7):
       参见“ResourcesManager”的声明
   
-E:\TdGame\TdGame\game_manager.h(121,49): error C3861: “instance”: 找不到标识符
+E:\TdGame\TdGame\slim_enemy.h(14,24): error C3861: “instance”: 找不到标识符
   (编译源文件“main.cpp”)
   
-E:\TdGame\TdGame\game_manager.h(135,42): error C2039: "instance": 不是 "ConfigManager" 的成员
+E:\TdGame\TdGame\slim_enemy.h(14,4): error C2530: “texture_pool”: 必须初始化引用
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\slim_enemy.h(17,25): error C2027: 使用了未定义类型“ConfigManager”
   (编译源文件“main.cpp”)
       E:\TdGame\TdGame\config_manager.h(14,7):
       参见“ConfigManager”的声明
   
-E:\TdGame\TdGame\game_manager.h(135,42): error C3861: “instance”: 找不到标识符
+E:\TdGame\TdGame\slim_enemy.h(17,38): error C2143: 语法错误: 缺少“;”(在“&”的前面)
   (编译源文件“main.cpp”)
   
-E:\TdGame\TdGame\main.cpp(6,65): error C2039: "instance": 不是 "GameManager" 的成员
-      E:\TdGame\TdGame\game_manager.h(14,7):
-      参见“GameManager”的声明
+E:\TdGame\TdGame\slim_enemy.h(17,25): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+  (编译源文件“main.cpp”)
   
-E:\TdGame\TdGame\main.cpp(6,65): error C2064: 项不会计算为接受 0 个参数的函数
+E:\TdGame\TdGame\slim_enemy.h(17,40): error C2065: “slim_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\slim_enemy.h(17,71): error C2027: 使用了未定义类型“ConfigManager”
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\config_manager.h(14,7):
+      参见“ConfigManager”的声明
+  
+E:\TdGame\TdGame\slim_enemy.h(17,71): error C3861: “instance”: 找不到标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\slim_enemy.h(42,12): error C2065: “slim_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\slim_enemy.h(43,15): error C2065: “slim_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\slim_enemy.h(44,12): error C2065: “slim_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\slim_enemy.h(45,18): error C2065: “slim_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\slim_enemy.h(46,22): error C2065: “slim_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\slim_enemy.h(47,19): error C2065: “slim_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\slim_enemy.h(48,23): error C2065: “slim_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\manager.h(6,7): error C2953: “Manager”: 类模板已经定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(6,7):
+      参见“Manager”的声明
+  
+E:\TdGame\TdGame\manager.h(26,25): error C2086: “Manager<T> *Manager<T>::manager”: 重定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(26,25):
+      参见“Manager<T>::manager”的声明
+  
+E:\TdGame\TdGame\king_slim_enemy.h(14,24): error C2039: "instance": 不是 "ResourcesManager" 的成员
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\resources_manager.h(93,7):
+      参见“ResourcesManager”的声明
+  
+E:\TdGame\TdGame\king_slim_enemy.h(14,24): error C3861: “instance”: 找不到标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\king_slim_enemy.h(14,4): error C2530: “texture_pool”: 必须初始化引用
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\king_slim_enemy.h(17,25): error C2027: 使用了未定义类型“ConfigManager”
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\config_manager.h(14,7):
+      参见“ConfigManager”的声明
+  
+E:\TdGame\TdGame\king_slim_enemy.h(17,38): error C2143: 语法错误: 缺少“;”(在“&”的前面)
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\king_slim_enemy.h(17,25): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\king_slim_enemy.h(17,40): error C2065: “king_slim_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\king_slim_enemy.h(17,76): error C2027: 使用了未定义类型“ConfigManager”
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\config_manager.h(14,7):
+      参见“ConfigManager”的声明
+  
+E:\TdGame\TdGame\king_slim_enemy.h(17,76): error C3861: “instance”: 找不到标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\king_slim_enemy.h(42,12): error C2065: “king_slim_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\king_slim_enemy.h(43,15): error C2065: “king_slim_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\king_slim_enemy.h(44,12): error C2065: “king_slim_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\king_slim_enemy.h(45,18): error C2065: “king_slim_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\king_slim_enemy.h(46,22): error C2065: “king_slim_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\king_slim_enemy.h(47,19): error C2065: “king_slim_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\king_slim_enemy.h(48,23): error C2065: “king_slim_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\manager.h(6,7): error C2953: “Manager”: 类模板已经定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(6,7):
+      参见“Manager”的声明
+  
+E:\TdGame\TdGame\manager.h(26,25): error C2086: “Manager<T> *Manager<T>::manager”: 重定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(26,25):
+      参见“Manager<T>::manager”的声明
+  
+E:\TdGame\TdGame\skeleton_enemy.h(14,24): error C2039: "instance": 不是 "ResourcesManager" 的成员
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\resources_manager.h(93,7):
+      参见“ResourcesManager”的声明
+  
+E:\TdGame\TdGame\skeleton_enemy.h(14,24): error C3861: “instance”: 找不到标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\skeleton_enemy.h(14,4): error C2530: “texture_pool”: 必须初始化引用
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\skeleton_enemy.h(17,25): error C2027: 使用了未定义类型“ConfigManager”
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\config_manager.h(14,7):
+      参见“ConfigManager”的声明
+  
+E:\TdGame\TdGame\skeleton_enemy.h(17,38): error C2143: 语法错误: 缺少“;”(在“&”的前面)
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\skeleton_enemy.h(17,25): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\skeleton_enemy.h(17,40): error C2065: “skeleton_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\skeleton_enemy.h(17,75): error C2027: 使用了未定义类型“ConfigManager”
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\config_manager.h(14,7):
+      参见“ConfigManager”的声明
+  
+E:\TdGame\TdGame\skeleton_enemy.h(17,75): error C3861: “instance”: 找不到标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\skeleton_enemy.h(42,12): error C2065: “skeleton_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\skeleton_enemy.h(43,15): error C2065: “skeleton_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\skeleton_enemy.h(44,12): error C2065: “skeleton_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\skeleton_enemy.h(45,18): error C2065: “skeleton_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\skeleton_enemy.h(46,22): error C2065: “skeleton_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\skeleton_enemy.h(47,19): error C2065: “skeleton_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\skeleton_enemy.h(48,23): error C2065: “skeleton_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\manager.h(6,7): error C2953: “Manager”: 类模板已经定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(6,7):
+      参见“Manager”的声明
+  
+E:\TdGame\TdGame\manager.h(26,25): error C2086: “Manager<T> *Manager<T>::manager”: 重定义
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\manager.h(26,25):
+      参见“Manager<T>::manager”的声明
+  
+E:\TdGame\TdGame\goblin_enemy.h(14,24): error C2039: "instance": 不是 "ResourcesManager" 的成员
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\resources_manager.h(93,7):
+      参见“ResourcesManager”的声明
+  
+E:\TdGame\TdGame\goblin_enemy.h(14,24): error C3861: “instance”: 找不到标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\goblin_enemy.h(14,4): error C2530: “texture_pool”: 必须初始化引用
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\goblin_enemy.h(17,25): error C2027: 使用了未定义类型“ConfigManager”
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\config_manager.h(14,7):
+      参见“ConfigManager”的声明
+  
+E:\TdGame\TdGame\goblin_enemy.h(17,38): error C2143: 语法错误: 缺少“;”(在“&”的前面)
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\goblin_enemy.h(17,25): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\goblin_enemy.h(17,40): error C2065: “goblin_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\goblin_enemy.h(17,73): error C2027: 使用了未定义类型“ConfigManager”
+  (编译源文件“main.cpp”)
+      E:\TdGame\TdGame\config_manager.h(14,7):
+      参见“ConfigManager”的声明
+  
+E:\TdGame\TdGame\goblin_enemy.h(17,73): error C3861: “instance”: 找不到标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\goblin_enemy.h(42,12): error C2065: “goblin_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\goblin_enemy.h(43,15): error C2065: “goblin_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\goblin_enemy.h(44,12): error C2065: “goblin_template”: 未声明的标识符
+  (编译源文件“main.cpp”)
+  
+E:\TdGame\TdGame\goblin_enemy.h(44,12): error C1003: 错误计数超过 100；正在停止编译
+  (编译源文件“main.cpp”)
+  
   manager.h

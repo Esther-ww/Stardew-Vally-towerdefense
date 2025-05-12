@@ -10,6 +10,8 @@
 #include "manager.h"
 #include"config_manager.h"
 #include"resources_manager.h"
+#include"wave_manager.h"
+#include"enemy_manager.h"
 
 class GameManager:public Manager<GameManager>{
 	friend class Manager<GameManager>;
@@ -103,6 +105,19 @@ private:
 
 	}
 	void on_update(double delta){
+
+		static ConfigManager* instance = ConfigManager::instance();
+		if (!instance->is_game_over) {
+			WaveManager::instance()->on_update(delta);
+			EnemyManager::instance()->on_update(delta);
+		}
+
+
+
+
+
+
+
 
 	}
 	void on_render() {

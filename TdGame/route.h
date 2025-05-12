@@ -52,7 +52,7 @@ public:
 		}
 	}
 	~Route()=default;
-	const IdxList& get_lidx_list()const {
+	const IdxList& get_idx_list()const {
 		return idx_list;
 	}
 
