@@ -3,6 +3,7 @@
 
 #include"manager.h"
 
+
 class CoinManager  
 :public Manager<CoinManager>//类继承于模板类的实例化版本
 {

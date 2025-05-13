@@ -28,6 +28,9 @@
     <Filter Include="头文件\bullet">
       <UniqueIdentifier>{57291e4a-9458-4098-8b36-00336f1538e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\tower">
+      <UniqueIdentifier>{5b155c45-bc01-4263-8442-81e756275aad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -103,6 +106,45 @@
     </ClInclude>
     <ClInclude Include="bullet.h">
       <Filter>头文件\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="arrow_bullet.h">
+      <Filter>头文件\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="axe_bullet.h">
+      <Filter>头文件\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="shell_bullet.h">
+      <Filter>头文件\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet_manager.h">
+      <Filter>头文件\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet_type.h">
+      <Filter>头文件\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="tower.h">
+      <Filter>头文件\tower</Filter>
+    </ClInclude>
+    <ClInclude Include="tower_type.h">
+      <Filter>头文件\tower</Filter>
+    </ClInclude>
+    <ClInclude Include="facing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="archer_tower.h">
+      <Filter>头文件\tower</Filter>
+    </ClInclude>
+    <ClInclude Include="axeman_tower.h">
+      <Filter>头文件\tower</Filter>
+    </ClInclude>
+    <ClInclude Include="gunner_tower.h">
+      <Filter>头文件\tower</Filter>
+    </ClInclude>
+    <ClInclude Include="tower_manager.h">
+      <Filter>头文件\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="coin_prop.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
