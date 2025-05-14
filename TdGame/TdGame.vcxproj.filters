@@ -22,14 +22,17 @@
     <Filter Include="源文件\cjson">
       <UniqueIdentifier>{fde17f28-8167-4e5a-9756-9ea956bce7d9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\NewFilter1">
-      <UniqueIdentifier>{fa53c22d-4e20-41b2-b232-8c7760cbde37}</UniqueIdentifier>
-    </Filter>
     <Filter Include="头文件\bullet">
       <UniqueIdentifier>{57291e4a-9458-4098-8b36-00336f1538e2}</UniqueIdentifier>
     </Filter>
     <Filter Include="头文件\tower">
       <UniqueIdentifier>{5b155c45-bc01-4263-8442-81e756275aad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ui">
+      <UniqueIdentifier>{50f669ea-e820-404c-9695-2dd332dabb7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ui\panel">
+      <UniqueIdentifier>{305b2e1b-9d55-4eaf-b430-d46255d6eea9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +148,27 @@
     </ClInclude>
     <ClInclude Include="coin_prop.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="status_bar.h">
+      <Filter>头文件\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="panel.h">
+      <Filter>头文件\ui\panel</Filter>
+    </ClInclude>
+    <ClInclude Include="place_panel.h">
+      <Filter>头文件\ui\panel</Filter>
+    </ClInclude>
+    <ClInclude Include="upgrade_panel.h">
+      <Filter>头文件\ui\panel</Filter>
+    </ClInclude>
+    <ClInclude Include="player_manager.h">
+      <Filter>头文件\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="banner.h">
+      <Filter>头文件\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="resources_manager.h">
+      <Filter>头文件\manager</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

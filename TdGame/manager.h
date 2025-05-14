@@ -1,28 +1,30 @@
-#ifndef _MANAGER_H
-#define _MANSGER_H
+#ifndef _MANAGER_H_
+#define _MANAGER_H_
 
 template <typename T>
-//单例模式
-class Manager {
+class Manager
+{
 public:
-	static T* instance() {
+	static T* instance()
+	{
 		if (!manager)
 			manager = new T();
+
 		return manager;
 	}
-	
-private:
-	static Manager* manager;//静态指针 manager：用来保存 Manager 的唯一实例。
 
-	
+private:
+	static T* manager;
+
 protected:
-	Manager() = default;//防止外部代码通过 new Manager() 创建多个 Manager 实例。
+	Manager() = default;
+	~Manager() = default;
 	Manager(const Manager&) = delete;
 	Manager& operator=(const Manager&) = delete;
-	~Manager() = default;
- };
+
+};
 
 template <typename T>
-Manager<T>* Manager<T>::manager = nullptr;
+T* Manager<T>::manager = nullptr;
 
-#endif 
+#endif // !_MANAGER_H_

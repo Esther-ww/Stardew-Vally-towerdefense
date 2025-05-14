@@ -73,12 +73,6 @@ private:
 
 };
 
-Route::Route()
-{
-}
 
-Route::~Route()
-{
-}
 #endif // !_ROUTE_H_
 

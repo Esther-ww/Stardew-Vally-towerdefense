@@ -4,14 +4,14 @@
 #include "enemy.h"
 #include "manager.h"
 #include "config_manager.h"
-#include"home_manager.h"
-
+#include "home_manager.h"
 #include "slim_enemy.h"
 #include "king_slim_enemy.h"
 #include "skeleton_enemy.h"
 #include "goblin_enemy.h"
 #include "goblin_priest_enemy.h"
-
+#include "bullet_manager.h"
+#include "coin_manager.h"
 
 #include <vector>
 #include <SDL.h>
@@ -30,7 +30,9 @@ public:
 			enemy->on_update(delta);
 
 		process_home_collision();
-		
+		process_bullet_collision();
+
+		remove_invalid_enemy();
 	}
 
 	void on_render(SDL_Renderer* renderer)
@@ -43,7 +45,7 @@ public:
 	{
 		static Vector2 position;
 		static const SDL_Rect& rect_tile_map = ConfigManager::instance()->rect_tile_map;
-		static const Map::spawnerRoutePool& spawner_route_pool
+		static const Map::SpawnerRoutePool& spawner_route_pool
 			= ConfigManager::instance()->map.get_idx_spawner_pool();
 
 		const auto& itor = spawner_route_pool.find(idx_spawn_point);
@@ -73,7 +75,7 @@ public:
 			enemy = new SlimEnemy();
 			break;
 		}
-		//放技能时的回调函数
+		//放技能回调函数
 		enemy->set_on_skill_released(
 			[&](Enemy* enemy_src)
 			{
@@ -91,11 +93,12 @@ public:
 			});
 
 		const Route::IdxList& idx_list = itor->second.get_idx_list();
+
 		//转化为世界坐标
 		position.x = rect_tile_map.x + idx_list[0].x * SIZE_TILE + SIZE_TILE / 2;
 		position.y = rect_tile_map.y + idx_list[0].y * SIZE_TILE + SIZE_TILE / 2;
 
-		enemy->set_position(position);//放置的初始位置
+		enemy->set_position(position);//放置初始位置
 		enemy->set_route(&itor->second);//寻路路径
 
 		enemy_list.push_back(enemy);
@@ -118,13 +121,12 @@ protected:
 	{
 		for (Enemy* enemy : enemy_list)
 			delete enemy;
-	}//遍历每一个对象
+	}
 
 private:
 	EnemyList enemy_list;
 
 private:
-	//房屋碰撞
 	void process_home_collision()
 	{
 		static const SDL_Point& idx_home = ConfigManager::instance()->map.get_idx_home();
@@ -144,7 +146,7 @@ private:
 			if (position.x >= position_home_tile.x
 				&& position.y >= position_home_tile.y
 				&& position.x <= position_home_tile.x + SIZE_TILE
-				&& position.y <= position_home_tile.y + SIZE_TILE)//敌人到了家的格子
+				&& position.y <= position_home_tile.y + SIZE_TILE)
 			{
 				enemy->make_invalid();
 
@@ -153,11 +155,75 @@ private:
 		}
 	}
 
+	void process_bullet_collision()
+	{
+		static BulletManager::BulletList& bullet_list
+			= BulletManager::instance()->get_bullet_list();
 
+		for (Enemy* enemy : enemy_list)
+		{
+			if (enemy->can_remove()) continue;
 
-	 
+			const Vector2& size_enemy = enemy->get_size();
+			const Vector2& pos_enemy = enemy->get_position();
 
-	
+			for (Bullet* bullet : bullet_list)
+			{
+				if (!bullet->can_collide()) continue;
+
+				const Vector2& pos_bullet = bullet->get_position();
+
+				if (pos_bullet.x >= pos_enemy.x - size_enemy.x / 2
+					&& pos_bullet.y >= pos_enemy.y - size_enemy.y / 2
+					&& pos_bullet.x <= pos_enemy.x + size_enemy.x / 2
+					&& pos_bullet.y <= pos_enemy.y + size_enemy.y / 2)//包围盒碰撞检测
+				{
+					double damage = bullet->get_damage();
+					double damage_range = bullet->get_damage_range();
+					if (damage_range < 0)//单体伤害
+					{
+						enemy->decrease_hp(damage);
+						if (enemy->can_remove())
+							try_spawn_coin_prop(pos_enemy, enemy->get_reward_ratio());
+					}
+					else
+					{
+						for (Enemy* target_enemy : enemy_list)//范围伤害
+						{
+							const Vector2& pos_target_enemy = target_enemy->get_position();
+							if ((pos_target_enemy - pos_bullet).length() <= damage_range)
+							{
+								target_enemy->decrease_hp(damage);
+								if (target_enemy->can_remove())
+									try_spawn_coin_prop(pos_target_enemy, enemy->get_reward_ratio());
+							}
+						}
+					}
+
+					bullet->on_collide(enemy);
+				}
+			}
+		}
+	}
+
+	void remove_invalid_enemy()
+	{
+		enemy_list.erase(std::remove_if(enemy_list.begin(), enemy_list.end(),
+			[](const Enemy* enemy)
+			{
+				bool deletable = enemy->can_remove();
+				if (deletable) delete enemy;
+				return deletable;
+			}), enemy_list.end());
+	}
+
+	void try_spawn_coin_prop(const Vector2& position, double ratio)
+	{
+		static CoinManager* instance = CoinManager::instance();
+
+		if ((double)(rand() % 100) / 100 <= ratio)//根据概率掉落金币
+			instance->spawn_coin_prop(position);
+	}
 
 };
 

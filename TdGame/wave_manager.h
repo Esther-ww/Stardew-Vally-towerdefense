@@ -26,7 +26,7 @@ public:
 
 		if (is_spawned_last_enemy && EnemyManager::instance()->check_cleared())
 		{
-			CoinManager::instance()->increase_coin(instance->wave_list[idx_wave].rawards);
+			CoinManager::instance()->increase_coin(instance->wave_list[idx_wave].rewards);
 
 			idx_wave++;
 

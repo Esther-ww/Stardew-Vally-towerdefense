@@ -3,7 +3,7 @@
 #include<vector>
 #define SIZE_TILE 48
 struct Tile {
-	int terrian = 0;//地形层
+	int terrain = 0;//地形层
 	int decoration = -1;
 	int special_flag = -1;
 	enum class Direction {

@@ -1,28 +1,29 @@
 #ifndef _CONFIG_MANAGER_H_
-#define _CONDIG_MANAGER_H_
+#define _CONFIG_MANAGER_H_
 
+#include "map.h"
+#include "wave.h"
 #include "manager.h"//继承
 
-#include"map.h"
-#include"wave.h"
-#include<SDL.h>
-#include<string>
-#include<cJSON.h>
-#include<fstream>
-#include<sstream>
-#include<iostream>
-class ConfigManager :public Manager<ConfigManager>
-{
+#include <SDL.h>
+#include <string>
+#include <cJSON.h>
+#include <fstream>
+#include <sstream>
+#include <iostream>
 
-	friend class Manager< ConfigManager>;
+class ConfigManager : public Manager<ConfigManager>
+{
+	friend class Manager<ConfigManager>;
+
 public:
 	struct BasicTemplate
 	{
-		std::string window_title = u8"鹈鹕镇保卫战";
+		std::string window_title = u8"幸运短裤保卫战";
 		int window_width = 1280;
 		int window_height = 720;
-
 	};
+
 	struct PlayerTemplate//玩家
 	{
 		double speed = 3;
@@ -52,17 +53,10 @@ public:
 		double recover_intensity = 25;
 	};
 
-protected:
-	ConfigManager() = default;
-	~ConfigManager() = default;
-
-
-
 public:
 	Map map;
-	std::vector<Wave> wave_list;
-	std::vector<Wave> wave_list;
-	//地图关卡波次
+	std::vector<Wave> wave_list;//地图关卡波次
+
 	int level_archer = 0;
 	int level_axeman = 0;
 	int level_gunner = 0;
@@ -96,9 +90,8 @@ public:
 
 		if (!file.good()) return false;
 
-		std::stringstream str_stream;//中转（文件数据->字符串）
-		str_stream << file.rdbuf();
-		file.close();
+		std::stringstream str_stream;//（文件数据->字符串）
+		str_stream << file.rdbuf(); file.close();
 
 		cJSON* json_root = cJSON_Parse(str_stream.str().c_str());//解析
 		if (!json_root) return false;
@@ -110,9 +103,9 @@ public:
 		}
 
 		cJSON* json_wave = nullptr;
-		cJSON_ArrayForEach(json_wave, json_root)//遍历
+		cJSON_ArrayForEach(json_wave, json_root)
 		{
-			if (json_wave->type != cJSON_Object)//一波敌人是一个 JSON 对象
+			if (json_wave->type != cJSON_Object)
 				continue;
 
 			wave_list.emplace_back();
@@ -120,7 +113,7 @@ public:
 
 			cJSON* json_wave_rewards = cJSON_GetObjectItem(json_wave, "rewards");
 			if (json_wave_rewards && json_wave_rewards->type == cJSON_Number)
-				wave.rawards = json_wave_rewards->valuedouble;
+				wave.rewards = json_wave_rewards->valuedouble;
 			cJSON* json_wave_interval = cJSON_GetObjectItem(json_wave, "interval");
 			if (json_wave_interval && json_wave_interval->type == cJSON_Number)
 				wave.interval = json_wave_interval->valuedouble;
@@ -159,7 +152,7 @@ public:
 					}
 				}
 
-				if (wave.spawn_event_list.empty())//无效波删掉
+				if (wave.spawn_event_list.empty())
 					wave_list.pop_back();
 			}
 		}
@@ -171,6 +164,7 @@ public:
 
 		return true;
 	}
+
 	bool load_game_config(const std::string& path)
 	{
 		std::ifstream file(path);
@@ -215,6 +209,9 @@ public:
 		return true;
 	}
 
+protected:
+	ConfigManager() = default;
+	~ConfigManager() = default;
 
 private:
 	void parse_basic_template(BasicTemplate& tpl, cJSON* json_root)
@@ -318,5 +315,6 @@ private:
 	}
 
 };
-#endif // !_CONFIG_MANAGER_H_
 
+
+#endif // !_CONFIG_MANAGER_H_

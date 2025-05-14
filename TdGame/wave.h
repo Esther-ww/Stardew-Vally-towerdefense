@@ -14,7 +14,7 @@ struct Wave
 		EnemyType enemy_type = EnemyType::Slim;
 	};
 
-	double rawards = 0;
+	double rewards = 0;
 	double interval = 0;
 	std::vector<SpawnEvent> spawn_event_list;
 };
